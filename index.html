@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url('https://images6.fanpop.com/image/photos/36700000/Donuts-image-donuts-36702276-1280-853.jpg');
+  background-size: cover;
+  background-color: rgba(255,255,255,0.6);
+  background-blend-mode: lighten;
+}
+
+#title{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 5vh;
+  margin: 40px
+}
+
+#description{
+  text-align: center;
+  font-size: 25px;
+}
+
+#main-box{
+  background-color: #9F8170;
+  padding: 50px;
+  border: 1px solid black;
+  max-width: 500px;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+}
+
+#survey-form{
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: left;
+}
+
+#name{
+  height: 30px;
+  width: 500px;
+  font-size: 15px;
+}
+
+#email{
+  height: 30px;
+  width: 500px;
+  font-size: 15px;
+}
+
+#number{
+  height: 30px;
+  width: 500px;
+  font-size: 15px;
+}
+
+#dropdown{
+  height: 30px;
+  width: 200px;
+}
+
+#radio-answer{
+  font-size: 20px;
+}
+
+#clue{
+  font-size: 16px
+}
+
+#time{
+  font-size: 20px;
+}
+
+#comments{
+  width: 500px;
+  height: 200px;
+}
+
+</style>
+</head>
+
+<body>
+
+ <div class="container">
+  <header class="header">
+
+    <h1 id="title">DONUTS
+    </h1>
+      <p id="description"><i>Thank you helping us improve our donuts.</i>
+      </p>
+  </header>
+<br>
+<center>
+  <div id="main-box">
+   <form id="survey-form">
+
+    <div class="form-group">
+     <label id="name-label" for="name">Name</label><br>
+     <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+    </div>
+<br>    
+    <div class="form-group">
+     <label id="email-label" for="email">Email</label><br>
+     <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+    </div>
+<br>
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label><br>
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+<br>
+    <div class="form-group">
+      <p>Favorite type of donut</p>
+        <select id="dropdown" name="donut-type" class="form-control" required>
+            <option disabled selected value>Select type</option>
+            <option value="glazers">Glazers</option>
+            <option value="dunkers">Dunkers</option>
+            <option value="long-johns">Long Johns</option>
+            <option value="jelly-filled">Jelly Filled</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+      <p>Do you like sprinkles on your donuts?</p>
+
+      <label id="radio-answer">
+        <input 
+          name="sprinkles"
+          value="Yes"
+          type="radio"
+          class="input-radio"
+          checked/>Yes
+      </label>
+<br>
+      <label id="radio-answer">
+        <input 
+          name="sprinkles"
+          value="No"
+          type="radio"
+          class="input-radio"
+          checked/>No
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>What time of day do you buy donuts?<br>
+        <span id="clue"><i>(check all that apply)</i></span>
+      </p>
+
+      <label id="time">
+        <input
+          name="time"
+          value="morning"
+          type="checkbox"
+          class="input-checkbox"/>
+          Morning
+      </label>
+<br>
+      <label id="time">
+        <input
+          name="time"
+          value="afternoon"
+          type="checkbox"
+          class="input-checkbox"/>
+          Afternoon
+      </label>
+<br>
+      <label id="time">
+        <input
+          name="time"
+          value="evening"
+          type="checkbox"
+          class="input-checkbox"/>
+          Evening
+      </label>
+    </div>
+
+    <div class="form-group">
+      <p>Additional comments</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter comment here">
+      </textarea>
+    </div>
+<br>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit
+      </button>
+    </div>
+  </form
+  </div>
+
+</body
+</html>
